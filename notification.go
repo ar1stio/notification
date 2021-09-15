@@ -22,7 +22,7 @@ func main() {
 
 func ReceiveMessage() {
 
-	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
+	conn, err := amqp.Dial("Your Link Connection / IP")
 	failOnError(err, "Failed to connect AMQP")
 
 	defer conn.Close()
